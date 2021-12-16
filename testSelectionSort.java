@@ -22,7 +22,7 @@ public class testSelectionSort {
     public void testPositive(){
         int[] arr = new int[]{8,9,7,10,2};
         int[] res = new int[]{2,7,8,9,10};
-        FinalOne.sort(arr);
+        SelectionSort.sort(arr);
         assert(Arrays.equals(arr,res));
     }
 
@@ -30,7 +30,7 @@ public class testSelectionSort {
     public void testNegative(){
         int[] arr = new int[]{-8,-9,-7,-10,-2};
         int[] res = new int[]{-10,-9,-8,-7,-2};
-        FinalOne.sort(arr);
+        SelectionSort.sort(arr);
         assert(Arrays.equals(arr,res));
     }
 
@@ -38,7 +38,7 @@ public class testSelectionSort {
     public void testMixed(){
         int[] arr = new int[]{-8,-9,7,-10,2,0};
         int[] res = new int[]{-10,-9,-8,0,2,7};
-        FinalOne.sort(arr);
+        SelectionSort.sort(arr);
         assert(Arrays.equals(arr,res));
     }
 }
